@@ -8,6 +8,7 @@
     <title>Resume — John Laurence Aramay</title>
     <link rel="icon" href="img/ryu-dev.png" type="image/png">
     <link rel="stylesheet" href="styles.css">
+    <script src="portfolio.js" defer></script>
 </head>
 <body class="resume-page">
     <main class="resume-sheet">
@@ -16,7 +17,7 @@
         <header class="resume-header">
             <h1>John Laurence Aramay</h1>
             <ul class="resume-contact" aria-label="Contact information">
-                <li><a href="mailto:comp.sci.lau@programmer.net">comp.sci.lau@programmer.net</a></li>
+                <li><a href="mailto:comp.sci.lau@programmer.net">cpelaurence@laupyde.online</a></li>
                 <li><a href="tel:+69811877849">+639811877849</a></li>
                 <li>Iba, Zambales, Philippines</li>
                 <li><a href="https://github.com/laudotdev" target="_blank" rel="noopener noreferrer">github.com/laudotdev</a></li>
@@ -96,8 +97,15 @@
         <section class="resume-section" aria-labelledby="cert-skills-title">
             <h2 id="cert-skills-title">Certifications &amp; Skills</h2>
             <p><strong>Skills:</strong> Python; Java; HTML5; CSS; JavaScript; Git &amp; GitHub; Data Structures &amp; Algorithms; Object-Oriented Programming; Command Line / Terminal; Linux (Arch Linux, KDE Plasma); Problem Solving; Basic Debugging</p>
-            <p><strong>Certification:</strong> <a href="https://freecodecamp.org/certification/ryubbb/a2-english-for-developers" target="_blank" rel="noopener noreferrer">freecodecamp.org/certification/ryubbb/a2-english-for-developers</a></p>
+            <p><strong>Certification:</strong> A2 English for Developers (Beta) · <button class="certificate-open" type="button" aria-haspopup="dialog" aria-controls="certificate-dialog">View certificate</button> · <a href="https://freecodecamp.org/certification/ryubbb/a2-english-for-developers" target="_blank" rel="noopener noreferrer">Verify on freeCodeCamp</a></p>
         </section>
     </main>
+    <dialog class="certificate-dialog" id="certificate-dialog" aria-labelledby="certificate-dialog-title">
+        <div class="certificate-dialog-header">
+            <h3 id="certificate-dialog-title">A2 English for Developers certificate</h3>
+            <button class="certificate-close" type="button" aria-label="Close certificate">×</button>
+        </div>
+        <img src="img/certification.png" alt="freeCodeCamp A2 English for Developers (Beta) certificate awarded to John Laurence Aramay on July 4, 2026">
+    </dialog>
 </body>
 </html>

@@ -22,15 +22,19 @@
                 </button>
                 <span class="visually-hidden" id="music-status" aria-live="polite"></span>
             </div>
-            <nav class="site-nav" aria-label="Main navigation">
+            <nav class="site-nav" id="main-nav" aria-label="Main navigation">
                 <a href="#home">Home</a>
                 <a href="#projects">Projects</a>
                 <a href="#about">About</a>
+                <a href="#certification">Certifications</a>
                 <a href="#contact">Contact</a>
             </nav>
             <button class="theme-toggle" id="theme-toggle" type="button" aria-pressed="false" aria-label="Toggle dark theme">
                 <span aria-hidden="true">◐</span>
                 <span class="theme-label">Dark</span>
+            </button>
+            <button class="nav-toggle" id="nav-toggle" type="button" aria-expanded="false" aria-controls="main-nav" aria-label="Open navigation">
+                <span class="nav-toggle-icon" aria-hidden="true"><span></span><span></span><span></span></span>
             </button>
         </div>
     </header>
@@ -41,7 +45,7 @@
                 <h1 id="intro-title">John Laurence Aramay.</h1>
                 <p class="intro-role">Computer Engineering student <span aria-hidden="true">·</span> Developer</p>
                 <div class="para-intro">
-                    <p class="intro-summary">I build small, useful software projects. I have critical thinking skills, and problem solving skills. Currently studying Computer Engineering at President Ramon Magsaysay State University.</p>
+                    <p class="intro-summary">I build small and useful software projects. I have critical thinking skills, and problem solving skills. Currently studying Computer Engineering at President Ramon Magsaysay State University.</p>
                 </div>
                 <div class="intro-actions">
                     <a class="text-link" href="#projects">Want to see my projects? <span aria-hidden="true">↓</span></a>
@@ -50,45 +54,34 @@
             </div>
             <figure class="portrait">
                 <img src="img/ryu-dev.png" alt="Portrait of Laurence Aramay" width="300" height="300">
-                <figcaption class="mono">laudotdev / Iba, Zambales, Philippines</figcaption>
+                <figcaption class="meta-text">laudotdev / Iba, Zambales, Philippines</figcaption>
             </figure>
         </section>
 
         <section class="content-section projects-section" id="projects" aria-labelledby="projects-title">
             <div class="section-heading">
-                <p class="eyebrow mono">selected work</p>
+                <p class="eyebrow">selected work</p>
                 <h2 id="projects-title">Projects</h2>
             </div>
             <ol class="project-list">
                 <li class="project-item">
                     <article>
                         <div class="project-heading">
-                            <h3>LauDaily</h3>
-                            <span class="project-kind mono">Web application</span>
+                            <h3>Phone Mirror</h3>
+                            <span class="project-kind">Android desktop utility</span>
+                            <time class="project-date" datetime="2026-11">November, 2026</time>
                         </div>
-                        <p>A memory and content sharing website where people can save personal moments and writing.</p>
+                        <p>Mirrors an Android phone live on a computer after pairing over Wi-Fi with a QR code, using Android Wireless Debugging, ADB, and scrcpy.</p>
                         <ul class="tags" aria-label="Technologies">
-                            <li>Vanilla JavaScript</li><li>HTML</li><li>Bootstrap CSS</li><li>Git</li><li>GitHub</li>
+                            <li>Python</li><li>ADB</li><li>scrcpy</li><li>QR code</li><li>zeroconf</li><li>Git</li><li>GitHub</li>
                         </ul>
                         <div class="project-links">
-                            <a href="https://github.com/laudotdev/Daily-Journal-v2" target="_blank" rel="noopener noreferrer">Source <span aria-hidden="true">↗</span></a>
-                            <a href="https://laudaily.vercel.app" target="_blank" rel="noopener noreferrer">Live site <span aria-hidden="true">↗</span></a>
+                            <a href="https://github.com/laudotdev/android-share-screen" target="_blank" rel="noopener noreferrer">GitHub <span aria-hidden="true">↗</span></a>
                         </div>
-                    </article>
-                </li>
-                <li class="project-item">
-                    <article>
-                        <div class="project-heading">
-                            <h3>Lau-PyDE</h3>
-                            <span class="project-kind mono">Desktop application</span>
-                        </div>
-                        <p>A lightweight development environment for learning and writing Python, with a focused code editor and run workflow.</p>
-                        <ul class="tags" aria-label="Technologies">
-                            <li>Python</li><li>PySide6</li><li>Qt</li><li>Shell</li><li>InnoSetup</li><li>Git</li><li>GitHub</li><li>Arch Linux</li>
-                        </ul>
-                        <div class="project-links">
-                            <a href="https://github.com/laudotdev/Lau-PyDE_open-source" target="_blank" rel="noopener noreferrer">Source <span aria-hidden="true">↗</span></a>
-                            <a href="https://laupyde.online" target="_blank" rel="noopener noreferrer">Project site <span aria-hidden="true">↗</span></a>
+                        <div class="project-preview">
+                            <div class="preview-frame">
+                                <img src="https://opengraph.githubassets.com/1/laudotdev/android-share-screen" alt="GitHub repository preview for Phone Mirror" loading="lazy">
+                            </div>
                         </div>
                     </article>
                 </li>
@@ -96,89 +89,253 @@
                     <article>
                         <div class="project-heading">
                             <h3>VisUAL</h3>
-                            <span class="project-kind mono">Learning tool</span>
+                            <span class="project-kind">Learning tool</span>
+                            <time class="project-date" datetime="2026-10">October, 2026</time>
                         </div>
                         <p>Data Structures and Algorithm finals project. An educational program visualizer focused on helping learners see, step by step, how data structures change as code runs. It began as a linked-list visualization inside Lau-PyDE.</p>
                         <ul class="tags" aria-label="Technologies">
                             <li>Python</li><li>Data structures</li><li>Algorithms</li><li>JSON</li><li>Git</li><li>GitHub</li><li>Arch Linux</li>
                         </ul>
                         <div class="project-links">
-                            <a href="https://github.com/laudotdev/VisUAL" target="_blank" rel="noopener noreferrer">Source <span aria-hidden="true">↗</span></a>
+                            <a href="https://github.com/laudotdev/VisUAL" target="_blank" rel="noopener noreferrer">GitHub <span aria-hidden="true">↗</span></a>
+                        </div>
+                        <div class="project-preview">
+                            <div class="preview-frame">
+                                <img src="https://opengraph.githubassets.com/1/laudotdev/VisUAL" alt="GitHub repository preview for VisUAL" loading="lazy">
+                            </div>
+                        </div>
+                    </article>
+                </li>
+                <li class="project-item">
+                    <article>
+                        <div class="project-heading">
+                            <h3>Lau-PyDE</h3>
+                            <span class="project-kind">Desktop application</span>
+                            <time class="project-date" datetime="2026-09">September, 2026</time>
+                        </div>
+                        <p>A lightweight development environment for learning and writing Python, with a focused code editor and run workflow.</p>
+                        <ul class="tags" aria-label="Technologies">
+                            <li>Python</li><li>PySide6</li><li>Qt</li><li>Shell</li><li>InnoSetup</li><li>Git</li><li>GitHub</li><li>Arch Linux</li>
+                        </ul>
+                        <div class="project-links">
+                            <a href="https://github.com/laudotdev/Lau-PyDE_open-source" target="_blank" rel="noopener noreferrer">GitHub <span aria-hidden="true">↗</span></a>
+                            <a href="https://laupyde.online" target="_blank" rel="noopener noreferrer">Live site <span aria-hidden="true">↗</span></a>
+                        </div>
+                        <div class="project-preview">
+                            <div class="preview-frame">
+                                <iframe src="https://laupyde.online" title="Lau-PyDE project site preview" loading="lazy" tabindex="-1" aria-hidden="true" referrerpolicy="no-referrer" sandbox="allow-scripts allow-same-origin allow-forms"></iframe>
+                            </div>
+                        </div>
+                    </article>
+                </li>
+                <li class="project-item">
+                    <article>
+                        <div class="project-heading">
+                            <h3>LAU Start Code</h3>
+                            <span class="project-kind">Command-line tool</span>
+                            <time class="project-date" datetime="2026-09">September, 2026</time>
+                        </div>
+                        <p>A terminal-based project starter that creates project folders and starter files from templates for multiple programming languages and web projects.</p>
+                        <ul class="tags" aria-label="Technologies">
+                            <li>Python</li><li>CLI</li><li>pipx</li><li>TypeScript</li><li>Java</li><li>PHP</li><li>JavaScript</li><li>C</li><li>C++</li><li>C#</li><li>Web</li><li>Git</li><li>GitHub</li>
+                        </ul>
+                        <div class="project-links">
+                            <a href="https://github.com/laudotdev/LAU-Start-Code---open-source" target="_blank" rel="noopener noreferrer">GitHub <span aria-hidden="true">↗</span></a>
+                        </div>
+                        <div class="project-preview">
+                            <div class="preview-frame">
+                                <img src="https://opengraph.githubassets.com/1/laudotdev/LAU-Start-Code---open-source" alt="GitHub repository preview for LAU Start Code" loading="lazy">
+                            </div>
+                        </div>
+                    </article>
+                </li>
+                <li class="project-item">
+                    <article>
+                        <div class="project-heading">
+                            <h3>Grade Converter</h3>
+                            <span class="project-kind">JSON grade converter</span>
+                            <time class="project-date" datetime="2026-05">May, 2026</time>
+                        </div>
+                        <p class="paragraphs">Convert JSON grade data and review a grading scale. Convert from JSON format to a plain readable english text.</p>
+                        <ul class="tags" aria-label="Technologies">
+                            <li>Vanilla JS</li><li>HTML</li><li>CSS</li><li>JSON</li><li>Git</li><li>GitHub</li>
+                        </ul>
+                        <div class="project-links">
+                            <a href="https://github.com/laudotdev/json-converter" target="_blank" rel="noopener noreferrer">GitHub <span aria-hidden="true">↗</span></a>
+                            <a href="https://kittyhello.vercel.app" target="_blank" rel="noopener noreferrer">Live site <span aria-hidden="true">↗</span></a>
+                        </div>
+                        <div class="project-preview">
+                            <div class="preview-frame">
+                                <iframe src="https://kittyhello.vercel.app" title="Grade Converter live site preview" loading="lazy" tabindex="-1" aria-hidden="true" referrerpolicy="no-referrer" sandbox="allow-scripts allow-same-origin allow-forms"></iframe>
+                            </div>
+                        </div>
+                    </article>
+                </li>
+                <li class="project-item">
+                    <article>
+                        <div class="project-heading">
+                            <h3>Investomedia</h3>
+                            <span class="project-kind">Digital learning storefront</span>
+                            <time class="project-date" datetime="2026-04">April, 2026</time>
+                        </div>
+                        <p class="paragraphs">Investomedia is a digital learning shop with an investing education focus. Its catalog includes a beginner’s guide to digital products, practical guides to selling on Instagram and Facebook, and downloadable learning materials such as e-books and English grammar resources. Visitors can browse the products, build an order, and pay through GCash.</p>
+                        <ul class="tags" aria-label="Technologies">
+                            <li>Vanilla JS</li><li>HTML</li><li>CSS</li><li>Git</li><li>GitHub</li>
+                        </ul>
+                        <div class="project-links">
+                            <!-- <a href="https://github.com/laudotdev/investomedia" target="_blank" rel="noopener noreferrer">GitHub <span aria-hidden="true">↗</span></a> -->
+                            <a href="https://investomedia.vercel.app" target="_blank" rel="noopener noreferrer">Live site <span aria-hidden="true">↗</span></a>
+                        </div>
+                        <div class="project-preview">
+                            <div class="preview-frame">
+                                <iframe src="https://investomedia.vercel.app" title="Investomedia live site preview" loading="lazy" tabindex="-1" aria-hidden="true" referrerpolicy="no-referrer" sandbox="allow-scripts allow-same-origin allow-forms"></iframe>
+                            </div>
+                        </div>
+                    </article>
+                </li>
+                <li class="project-item">
+                    <article>
+                        <div class="project-heading">
+                            <h3>RyuCodeJavaChallengesGenerator</h3>
+                            <span class="project-kind">Java Application</span>
+                            <time class="project-date" datetime="2026-03">March, 2026</time>
+                        </div>
+                        <p class="paragraphs">Object Oriented Programming finals project, pick a challenge variant, solve the challenge, and generate scores.</p>
+                        <ul class="tags" aria-label="Technologies">
+                            <li>Java</li><li>HTML</li><li>Netbeans IDE</li><li>JSON</li><li>Git</li><li>GitHub</li>
+                        </ul>
+                        <div class="project-links">
+                            <a href="https://github.com/laudotdev/ryucodejavachallengesgeneratorwithcodeeditor" target="_blank" rel="noopener noreferrer">GitHub <span aria-hidden="true">↗</span></a>
+                        </div>
+                        <div class="project-preview">
+                            <div class="preview-frame">
+                                <img src="https://opengraph.githubassets.com/1/laudotdev/ryucodejavachallengesgeneratorwithcodeeditor" alt="GitHub repository preview for RyuCodeJavaChallengesGenerator" loading="lazy">
+                            </div>
+                        </div>
+                    </article>
+                </li>
+                <li class="project-item">
+                    <article>
+                        <div class="project-heading">
+                            <h3>LauDaily</h3>
+                            <span class="project-kind">Web application</span>
+                            <time class="project-date" datetime="2025-10">October, 2025</time>
+                        </div>
+                        <p>A memory and content sharing website where people can save personal moments and writing.</p>
+                        <ul class="tags" aria-label="Technologies">
+                            <li>Vanilla JavaScript</li><li>HTML</li><li>Bootstrap CSS</li><li>Git</li><li>GitHub</li>
+                        </ul>
+                        <div class="project-links">
+                            <!-- <a href="https://github.com/laudotdev/Daily-Journal-v2" target="_blank" rel="noopener noreferrer">GitHub <span aria-hidden="true">↗</span></a> -->
+                            <a href="https://laudaily.vercel.app" target="_blank" rel="noopener noreferrer">Live site <span aria-hidden="true">↗</span></a>
+                        </div>
+                        <div class="project-preview">
+                            <div class="preview-frame">
+                                <iframe src="https://laudaily.vercel.app" title="LauDaily live site preview" loading="lazy" tabindex="-1" aria-hidden="true" referrerpolicy="no-referrer" sandbox="allow-scripts allow-same-origin allow-forms"></iframe>
+                            </div>
                         </div>
                     </article>
                 </li>
             </ol>
+        </section>
 
-            <!-- Additional real projects, kept off the rendered page by request. -->
-            <article class="project-item">
-                <div class="project-heading">
-                    <h3>Investomedia</h3>
-                    <span class="project-kind mono">Online course selling</span>
+        <section class="content-section github-activity" id="github-activity" aria-labelledby="github-activity-title">
+            <div class="section-heading">
+                <p class="eyebrow">open source</p>
+                <h2 id="github-activity-title">GitHub contributions</h2>
+            </div>
+            <figure class="contribution-figure">
+                <div class="contribution-chart" id="contribution-chart" aria-busy="true">
+                    <p class="contribution-status">Loading 2026 contribution data…</p>
                 </div>
-                <p class="paragraphs">Digital course selling with a Node.js backend.</p>
-                <ul class="tags" aria-label="Technologies">
-                    <li>Vanilla JS</li><li>HTML</li><li>CSS</li><li>Git</li><li>GitHub</li>
-                </ul>
-                <div class="project-links">
-                    <a href="https://github.com/laudotdev/investomedia">Source</a>
-                    <a href="https://investomedia.vercel.app">Live demo</a>
-                </div>
-            </article>
-            <article class="project-item">
-                <div class="project-heading">
-                    <h3>Grade Converter</h3>
-                    <span class="project-kind mono">JSON grade converter</span>
-                </div>
-                <p class="paragraphs">Convert JSON grade data and review a grading scale. Convert from JSON format to a plain readable english text.</p>
-                <ul class="tags" aria-label="Technologies">
-                    <li>Vanilla JS</li><li>HTML</li><li>CSS</li><li>JSON</li><li>Git</li><li>GitHub</li>
-                </ul>
-                <div class="project-links">
-                    <a href="https://github.com/laudotdev/json-converter">Source</a>
-                    <a href="https://kittyhello.vercel.app">Live demo</a>
-                </div>
-            </article>
-            <article class="project-item">
-                <div class="project-heading">
-                    <h3>RyuCodeJavaChallengesGenerator</h3>
-                    <span class="project-kind mono">Java Application</span>
-                </div>
-                <p class="paragraphs">Object Oriented Programming finals project, pick a challenge variant, solve the challenge, and generate scores.</p>
-                <ul class="tags" aria-label="Technologies">
-                    <li>Java</li><li>HTML</li><li>Netbeans IDE</li><li>JSON</li><li>Git</li><li>GitHub</li>
-                </ul>
-                <div class="project-links">
-                    <a href="https://github.com/laudotdev/ryucodejavachallengesgeneratorwithcodeeditor">Source</a>
-                    <!-- <a href="https://investomedia.vercel.app">Live demo</a> -->
-                </div>
-            </article>
-           
+                <figcaption>
+                    <p class="contribution-total" id="contribution-total" aria-live="polite">Contributions in 2026</p>
+                    <a href="https://github.com/laudotdev" target="_blank" rel="noopener noreferrer">View my GitHub profile ↗</a>
+                </figcaption>
+            </figure>
         </section>
 
         <section class="content-section split-section" id="skills" aria-labelledby="skills-title">
             <div class="section-heading">
-                <p class="eyebrow mono">tools</p>
-                <h2 id="skills-title">Skills</h2>
+                <p class="eyebrow">tools</p>
+                <h2 id="skills-title">Tech Stacks</h2>
             </div>
             <div class="skill-groups">
                 <div class="skill-row">
                     <h3>Web</h3>
-                    <p>HTML5, CSS, Vanilla JS, Bootstrap, Node.js, MySQL</p>
+                    <ul class="skill-icons" aria-label="Web technologies">
+                        <li><img src="img/icons/html5.svg" alt=""><span>HTML5</span></li>
+                        <li><img src="img/icons/css3.svg" alt=""><span>CSS3</span></li>
+                        <li><img src="img/icons/javascript.svg" alt=""><span>JavaScript</span></li>
+                        <li><img src="img/icons/tailwindcss.svg" alt=""><span>Tailwind CSS</span></li>
+                        <li><img src="img/icons/bootstrap.svg" alt=""><span>Bootstrap</span></li>
+                        <li><img src="img/icons/nodejs.svg" alt=""><span>Node.js</span></li>
+                    </ul>
                 </div>
                 <div class="skill-row">
-                    <h3>Programming</h3>
-                    <p>Python, Java, Flask, MySQLAlchemy</p>
+                    <h3>Programming &amp; data</h3>
+                    <ul class="skill-icons" aria-label="Programming languages and data tools">
+                        <li><img src="img/icons/python.svg" alt=""><span>Python</span></li>
+                        <li><img src="img/icons/java.svg" alt=""><span>Java</span></li>
+                        <li><img src="img/icons/json.svg" alt=""><span>JSON</span></li>
+                        <li><img src="img/icons/flask.svg" alt=""><span>Flask</span></li>
+                        <li><img src="img/icons/sqlalchemy.svg" alt=""><span>SQLAlchemy</span></li>
+                        <li><img src="img/icons/mysql.svg" alt=""><span>MySQL</span></li>
+                    </ul>
                 </div>
                 <div class="skill-row">
-                    <h3>Tools &amp; foundations</h3>
-                    <p>Git &amp; GitHub, Linux, object-oriented programming, data structures &amp; algorithms, command line, problem solving, basic debugging</p>
+                    <h3>Cloud &amp; databases</h3>
+                    <ul class="skill-icons" aria-label="Cloud platforms and database services">
+                        <li><img src="img/icons/render.svg" alt=""><span>Render.com</span></li>
+                        <li><img src="img/icons/railway.svg" alt=""><span>Railway</span></li>
+                        <li><img src="img/icons/aiven.ico" alt=""><span>Aiven</span></li>
+                        <li><img src="img/icons/supabase.svg" alt=""><span>Supabase</span></li>
+                        <li><img src="img/icons/firebase.svg" alt=""><span>Firebase</span></li>
+                    </ul>
+                </div>
+                <div class="skill-row">
+                    <h3>Tools &amp; environment</h3>
+                    <ul class="skill-icons" aria-label="Development tools and environments">
+                        <li><img src="img/icons/vscode.svg" alt=""><span>VS Code</span></li>
+                        <li><img src="img/icons/netbeans.svg" alt=""><span>NetBeans IDE</span></li>
+                        <li><img src="img/icons/git.svg" alt=""><span>Git</span></li>
+                        <li><img src="img/icons/github.svg" alt=""><span>GitHub</span></li>
+                        <li><img src="img/icons/archlinux.svg" alt=""><span>Arch Linux</span></li>
+                        <li><img src="img/lau-pyde_logo.png" alt=""><span>Lau-PyDE</span></li>
+                    </ul>
                 </div>
             </div>
         </section>
 
+        <section class="content-section split-section" id="certification" aria-labelledby="certification-title">
+            <div class="section-heading">
+                <p class="eyebrow">achievements</p>
+                <h2 id="certification-title">Certification</h2>
+            </div>
+            <div class="certification-copy">
+                <h3>A2 English for Developers (Beta)</h3>
+                <p>freeCodeCamp <span aria-hidden="true">·</span> July 4, 2026</p>
+                <figure class="certificate-figure">
+                    <img src="img/certification.png" alt="freeCodeCamp A2 English for Developers (Beta) certificate awarded to John Laurence Aramay on July 4, 2026" loading="lazy">
+                    <figcaption>English for Developers certification</figcaption>
+                </figure>
+                <div class="certification-links">
+                    <button class="certificate-open" type="button" aria-haspopup="dialog" aria-controls="certificate-dialog">View certificate image</button>
+                    <a class="verify-cert" href="https://freecodecamp.org/certification/ryubbb/a2-english-for-developers" target="_blank" rel="noopener noreferrer">Verify on freeCodeCamp ↗</a>
+                </div>
+            </div>
+            <dialog class="certificate-dialog" id="certificate-dialog" aria-labelledby="certificate-dialog-title">
+                <div class="certificate-dialog-header">
+                    <h3 id="certificate-dialog-title">A2 English for Developers certificate</h3>
+                    <button class="certificate-close" type="button" aria-label="Close certificate">×</button>
+                </div>
+                <img src="img/certification.png" alt="freeCodeCamp A2 English for Developers (Beta) certificate awarded to John Laurence Aramay on July 4, 2026">
+            </dialog>
+        </section>
+
         <section class="content-section split-section" id="about" aria-labelledby="about-title">
             <div class="section-heading">
-                <p class="eyebrow mono">a little context</p>
+                <p class="eyebrow">a little context</p>
                 <h2 id="about-title">About</h2>
             </div>
             <div class="about-copy">
@@ -189,14 +346,14 @@
 
         <section class="content-section split-section contact-section" id="contact" aria-labelledby="contact-title">
             <div class="section-heading">
-                <p class="eyebrow mono">let's connect</p>
+                <p class="eyebrow">let's connect</p>
                 <h2 id="contact-title">Contact</h2>
             </div>
             <div class="contact-copy">
                 <p>For project questions or a quick hello, reach me here:</p>
                 <ul class="contact-list">
-                    <li><a href="https://github.com/laudotdev" target="_blank" rel="noopener noreferrer">GitHub <span class="mono" id="lauMono">@laudotdev</span></a></li>
-                    <li><a href="mailto:comp.sci.lau@programmer.net">Email <span class="mono" id="csMono">comp.sci.lau@programmer.net</span></a></li>
+                    <li><a href="https://github.com/laudotdev" target="_blank" rel="noopener noreferrer">GitHub <span class="meta-text">@laudotdev</span></a></li>
+                    <li><a href="mailto:cpelaurence@laupyde.online">Email <span class="meta-text">cpelaurence@laupyde.online</span></a></li>
                 </ul>
                 <div class="other-links" aria-label="Other social links">
                     <a href="https://www.instagram.com/lau.jsx/" target="_blank" rel="noopener noreferrer">Instagram</a>
@@ -209,8 +366,8 @@
 
     <footer class="site-footer">
         <div class="page-width footer-inner">
-            <p>© 2026 lau.dev <span aria-hidden="true">·</span> <span class="mono">v2.0</span></p>
-            <p class="mono">Last updated: November 25, 2026</p>
+            <p>© 2026 lau.dev <span aria-hidden="true">·</span> <span class="meta-text">v2.0</span></p>
+            <p class="meta-text">Last updated: November 25, 2026</p>
             <a href="#home" class="back-to-top">Back to top ↑</a>
         </div>
     </footer>
