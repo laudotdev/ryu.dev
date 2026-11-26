@@ -353,7 +353,7 @@
                 <p>For project questions or a quick hello, reach me here:</p>
                 <ul class="contact-list">
                     <li><a href="https://github.com/laudotdev" target="_blank" rel="noopener noreferrer">GitHub <span class="meta-text">@laudotdev</span></a></li>
-                    <li><a href="mailto:cpelaurence@laupyde.online">Email <span class="meta-text">cpelaurence@laupyde.online</span></a></li>
+                    <li><a class="contact-email" href="mailto:cpelaurence@laupyde.online" aria-haspopup="dialog" aria-controls="email-dialog">Email <span class="meta-text">cpelaurence@laupyde.online</span></a></li>
                 </ul>
                 <div class="other-links" aria-label="Other social links">
                     <a href="https://www.instagram.com/lau.jsx/" target="_blank" rel="noopener noreferrer">Instagram</a>
@@ -362,6 +362,16 @@
                 </div>
             </div>
         </section>
+
+        <dialog class="email-dialog" id="email-dialog" aria-labelledby="email-dialog-title">
+            <div class="email-dialog-header">
+                <h3 id="email-dialog-title">Email Laurence</h3>
+                <button class="email-dialog-close" type="button" aria-label="Close email dialog">×</button>
+            </div>
+            <p class="email-address">cpelaurence@laupyde.online</p>
+            <button class="email-copy" type="button">Copy email address</button>
+            <p class="email-copy-status" aria-live="polite"></p>
+        </dialog>
     </main>
 
     <footer class="site-footer">

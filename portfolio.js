@@ -13,6 +13,12 @@
     const certificateDialog = document.getElementById("certificate-dialog");
     const certificateOpen = document.querySelector(".certificate-open");
     const certificateClose = certificateDialog?.querySelector(".certificate-close");
+    const emailLink = document.querySelector(".contact-email");
+    const emailDialog = document.getElementById("email-dialog");
+    const emailDialogClose = emailDialog?.querySelector(".email-dialog-close");
+    const emailCopy = emailDialog?.querySelector(".email-copy");
+    const emailAddress = emailDialog?.querySelector(".email-address");
+    const emailCopyStatus = emailDialog?.querySelector(".email-copy-status");
     const contributionChart = document.getElementById("contribution-chart");
     const contributionTotal = document.getElementById("contribution-total");
 
@@ -130,6 +136,28 @@
             certificateDialog.close();
         }
     });
+
+    // emailLink?.addEventListener("click", (event) => {
+    //     event.preventDefault();
+    //     emailDialog?.showModal();
+    // });
+    // emailDialogClose?.addEventListener("click", () => emailDialog?.close());
+    // emailDialog?.addEventListener("click", (event) => {
+    //     if (event.target === emailDialog) {
+    //         emailDialog.close();
+    //     }
+    // });
+    // emailCopy?.addEventListener("click", async () => {
+    //     const address = emailAddress?.textContent.trim();
+    //     if (!address || !emailCopyStatus) return;
+
+    //     try {
+    //         await navigator.clipboard.writeText(address);
+    //         emailCopyStatus.textContent = "Email address copied.";
+    //     } catch {
+    //         emailCopyStatus.textContent = "Copy is unavailable here. Select the address above to copy it.";
+    //     }
+    // });
 
     async function loadContributionCalendar() {
         if (!contributionChart) return;

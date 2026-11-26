@@ -791,6 +791,76 @@ h1 {
     object-fit: contain;
 }
 
+.email-dialog {
+    width: min(92vw, 28rem);
+    padding: 1.25rem;
+    border: 1px solid var(--line);
+    background: var(--surface);
+    color: var(--text);
+}
+
+.email-dialog::backdrop {
+    background: rgb(0 0 0 / 55%);
+}
+
+.email-dialog-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+.email-dialog-header h3 {
+    margin: 0;
+    font-size: 1.1rem;
+}
+
+.email-dialog-close {
+    display: grid;
+    width: 2.25rem;
+    height: 2.25rem;
+    place-items: center;
+    flex: 0 0 auto;
+    border: 1px solid var(--line);
+    background: transparent;
+    color: var(--text);
+    font-size: 1.75rem;
+    line-height: 1;
+}
+
+.email-dialog-close:hover {
+    border-color: var(--accent);
+    color: var(--accent-hover);
+}
+
+.email-address {
+    margin: 0 0 1rem;
+    overflow-wrap: anywhere;
+    font-size: 1.05rem;
+    font-weight: 600;
+    user-select: all;
+}
+
+.email-copy {
+    padding: 0.45rem 0.7rem;
+    border: 1px solid var(--line);
+    background: transparent;
+    color: var(--accent);
+}
+
+.email-copy:hover {
+    border-color: var(--accent);
+    color: var(--accent-hover);
+}
+
+.email-copy-status {
+    min-height: 1.5em;
+    margin: 0.5rem 0 0;
+    color: var(--muted);
+    font-size: 0.85rem;
+}
+
 .site-footer {
     border-top: 1px solid var(--line);
     color: var(--muted);
@@ -891,6 +961,15 @@ h1 {
     line-height: 1.5;
 }
 
+.schools{
+    margin-top: 0;
+}
+
+.year-education {
+    margin-top: 0;
+    margin-bottom: 0.8rem;
+}
+
 .resume-project + .resume-project {
     margin-top: 0.9rem;
 }
@@ -939,6 +1018,10 @@ h1 {
 
 .resume-section strong {
     color: var(--text);
+}
+
+.year-education {
+    margin-top: 0;
 }
 
 @media (max-width: 985px) {
